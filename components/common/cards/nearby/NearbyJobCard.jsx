@@ -1,9 +1,8 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import { checkImageURL } from "../../../../utils";
+import { icons } from "../../../../constants";
 
 import styles from "./nearbyjobcard.style";
-const DUMMY_LOGO =
-  "https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqzO5H.jpg";
 
 const NearbyJobCard = ({ job, handleNavigate }) => {
   return (
@@ -13,7 +12,7 @@ const NearbyJobCard = ({ job, handleNavigate }) => {
           source={{
             uri: checkImageURL(job.employer_logo)
               ? job.employer_logo
-              : DUMMY_LOGO
+              : icons.DUMMY_LOGO
           }}
           resize="contain"
           style={styles.logoImage}
