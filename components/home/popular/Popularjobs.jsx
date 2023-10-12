@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 
 import styles from './popularjobs.style'
 
-const Popularjobs = () => {
+const PopularJobs = () => {
   return (
     <View>
       <Text>Popularjobs</Text>
@@ -11,4 +11,4 @@ const Popularjobs = () => {
   )
 }
 
-export default Popularjobs
+export default PopularJobs
