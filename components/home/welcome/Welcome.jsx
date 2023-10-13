@@ -40,7 +40,7 @@ const Welcome = () => {
           <Image
             source={icons.search}
             resizeMode="center"
-            styles={styles.searchBtnImage}
+            style={styles.searchBtnImage}
           />
         </TouchableOpacity>
       </View>
